@@ -6169,8 +6169,8 @@ Camera:Stop()
 coroutine.wrap(function()
     game:GetService("RunService").Stepped:Connect(function()
         if getupvalues(CombatFramework)[2]['activeController'].timeToNextAttack then
-            getupvalues(CombatFramework)[2]['activeController'].timeToNextAttack = 10000000
-            getupvalues(CombatFramework)[2]['activeController'].hitboxMagnitude = 100
+            getupvalues(CombatFramework)[2]['activeController'].timeToNextAttack = 0.1
+            getupvalues(CombatFramework)[2]['activeController'].hitboxMagnitude =  9
             getupvalues(CombatFramework)[2]['activeController']:attack()
         end
     end)
