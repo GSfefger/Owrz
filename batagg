@@ -2108,7 +2108,7 @@ page2:Toggle({
 	Title = "Fast Attack",
 	Default = _G.FastAttackNormalSpeed ,
 	callback = function(value)
-		_G.FastAttackNormalSpeed  = false
+		_G.FastAttackNormalSpeed  = true
 	end,
 })
 
